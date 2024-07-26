@@ -1,0 +1,2 @@
+INSERT INTO MACHINE_ELEM_REFERENTIALS_MV (id, referential_Id, machine_Code, description, valid_From_Day, expiry_Day, machine_Length, schematic_Support)
+VALUES (1L, 1, 'BI', 'BI Transfer Line', TIMESTAMP '2022-12-31 23.59.59', TIMESTAMP '2029-12-31 23.59.59', 10.0, true);
