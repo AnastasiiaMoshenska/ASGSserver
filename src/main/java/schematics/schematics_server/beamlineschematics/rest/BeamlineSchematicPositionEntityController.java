@@ -1,10 +1,7 @@
 package schematics.schematics_server.beamlineschematics.rest;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import schematics.schematics_server.beamlineschematics.BeamlineSchematicPosition;
 import schematics.schematics_server.beamlineschematics.service.BeamlineSchematicPositionService;
 
@@ -18,6 +15,7 @@ public class BeamlineSchematicPositionEntityController {
 
     private final BeamlineSchematicPositionService beamlineSchematicPositionService;
 
+    @CrossOrigin(origins = "https://localhost:4200")
     @GetMapping("/referential/{referentialId}/elValidFromDay/{elValidFromDay}")
     public List<BeamlineSchematicPosition> findAllPositions(
             @PathVariable(name = "referentialId") long referentialId,

@@ -54,3 +54,9 @@ INSERT INTO MACHINE_ELEM_REFERENTIALS_MV (referentialId, machineCode, descriptio
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
 	at schematics.schematics_server.SchematicsServerApplication.main(SchematicsServerApplication.java:10)
+2024-08-19 10:13:15.779597+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE [*]* FROM MACHINE_ELEM_REFERENTIALS_MV"; expected "identifier"; SQL statement:
+DELETE * FROM MACHINE_ELEM_REFERENTIALS_MV [42001-230]
+2024-08-19 11:47:07.764610+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE MACHINE_ELEM_REFERENTIALS_MV [*]FROM ELEMENTS"; SQL statement:
+DELETE MACHINE_ELEM_REFERENTIALS_MV FROM ELEMENTS [42000-230]

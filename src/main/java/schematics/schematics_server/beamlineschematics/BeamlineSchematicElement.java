@@ -25,7 +25,7 @@ public class BeamlineSchematicElement {
     private final Instant expiryDay;
     private final String expiryDayLabel;
     private final Integer expiryDayId;
-    private final Integer elementTypeId;
+    private final Long elementTypeId;
     private final String typeName;
     private final String bgColor;
     private final String txtColor;

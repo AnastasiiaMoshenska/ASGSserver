@@ -14,7 +14,7 @@ import java.time.Instant;
 @JsonDeserialize(builder = BeamlineSchematicMachine.BeamlineSchematicMachineBuilder.class)
 public class BeamlineSchematicMachine {
     private final Long machineElementId;
-    private final int referentialId;
+    private final Long referentialId;
     private final String machineCode;
     private final String description;
     private final Instant validFromDay;

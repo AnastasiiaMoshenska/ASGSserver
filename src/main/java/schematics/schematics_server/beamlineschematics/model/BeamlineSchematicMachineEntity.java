@@ -10,9 +10,8 @@ import java.time.Instant;
 @Table(name = "MACHINE_ELEM_REFERENTIALS_MV")
 public class BeamlineSchematicMachineEntity {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
-    private int referentialId;
+    private Long referentialId;
     private String machineCode;
     private String description;
     private Instant validFromDay;
@@ -22,7 +21,7 @@ public class BeamlineSchematicMachineEntity {
 
     public BeamlineSchematicMachineEntity(){}
 
-    public BeamlineSchematicMachineEntity(Long id, int referentialId, String machineCode, String description, Instant validFromDay, Instant expiryDay, Double machineLength, Boolean schematicSupport) {
+    public BeamlineSchematicMachineEntity(Long id, Long referentialId, String machineCode, String description, Instant validFromDay, Instant expiryDay, Double machineLength, Boolean schematicSupport) {
         this.setId(id);
         this.setReferentialId(referentialId);
         this.setMachineCode(machineCode);
@@ -58,7 +57,7 @@ public class BeamlineSchematicMachineEntity {
         return this.machineCode = machineCode;
     }
 
-    private int setReferentialId(int referentialId) {
+    private Long setReferentialId(Long referentialId) {
         return this.referentialId = referentialId;
     }
 

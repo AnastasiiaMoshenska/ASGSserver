@@ -23,7 +23,7 @@ public class BeamlineSchematicElementEntity {
     private Instant expiryDay;
     private String expiryDayLabel;
     private Integer expiryDayId;
-    private Integer elementTypeId;
+    private Long elementTypeId;
     private String typeName;
     private String bgColor;
     private String txtColor;
@@ -45,7 +45,7 @@ public class BeamlineSchematicElementEntity {
     public BeamlineSchematicElementEntity() {
     }
 
-    public BeamlineSchematicElementEntity(Long id, Long elementId, String elementLabel, String elementName, String expertName, Integer depthLevel, String mainClass, Instant validFromDay, Integer validFromDayId, Instant expiryDay, String expiryDayLabel, Integer expiryDayId, Integer elementTypeId, String typeName, String bgColor, String txtColor, Double width, Double height, Double depth, Double downstreamX, Double downstreamY, Double downstreamZ, Double midstreamX, Double midstreamY, Double midstreamZ, Double upstreamX, Double upstreamY, Double upstreamZ, String sequences) {
+    public BeamlineSchematicElementEntity(Long id, Long elementId, String elementLabel, String elementName, String expertName, Integer depthLevel, String mainClass, Instant validFromDay, Integer validFromDayId, Instant expiryDay, String expiryDayLabel, Integer expiryDayId, Long elementTypeId, String typeName, String bgColor, String txtColor, Double width, Double height, Double depth, Double downstreamX, Double downstreamY, Double downstreamZ, Double midstreamX, Double midstreamY, Double midstreamZ, Double upstreamX, Double upstreamY, Double upstreamZ, String sequences) {
         this.setId(id);
         this.setElementId(elementId);
         this.setElementLabel(elementLabel);
@@ -125,7 +125,7 @@ public class BeamlineSchematicElementEntity {
         return this.expiryDayId = expiryDayId;
     }
 
-    public Integer setElementTypeId(Integer elementTypeId) {
+    public Long setElementTypeId(Long elementTypeId) {
         return this.elementTypeId = elementTypeId;
     }
 

@@ -15,6 +15,7 @@ public class BeamlineSchematicElementController {
 
     private final BeamlineSchematicElementService beamlineSchematicElementService;
 
+    @CrossOrigin(origins = "https://localhost:4200")
     @GetMapping("/machine/{machineElemId}/referential/{referentialId}")
     public List<BeamlineSchematicElement> getAllElements(
             @PathVariable(name = "machineElemId") long id,
