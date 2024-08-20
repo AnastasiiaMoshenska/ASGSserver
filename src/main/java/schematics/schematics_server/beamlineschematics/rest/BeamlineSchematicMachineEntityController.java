@@ -18,7 +18,7 @@ public class BeamlineSchematicMachineEntityController {
 
     @CrossOrigin(origins = "https://localhost:4200")
     @GetMapping("")
-    public List<BeamlineSchematicMachine> findAllMachinesDto() {
+    public List<BeamlineSchematicMachine> findAllMachines() {
         return beamlineSchematicMachineService.findAllMachines();
     }
 }

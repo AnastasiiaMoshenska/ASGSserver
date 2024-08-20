@@ -33,35 +33,35 @@ public class BeamlineSchematicMachineEntity {
 
     }
 
-    private boolean setSchematicSupport(boolean schematicSupport){
+    public boolean setSchematicSupport(boolean schematicSupport){
         return this.schematicSupport = schematicSupport;
     }
 
-    private Double setMachineLength(Double machineLength) {
+    public Double setMachineLength(Double machineLength) {
         return this.machineLength = machineLength;
     }
 
-    private Instant setExpiryDay(Instant expiryDay) {
+    public Instant setExpiryDay(Instant expiryDay) {
         return this.expiryDay = expiryDay;
     }
 
-    private Instant setValidFromDay(Instant validFromDay) {
+    public Instant setValidFromDay(Instant validFromDay) {
         return this.validFromDay = validFromDay;
     }
 
-    private String setDescription(String description) {
+    public String setDescription(String description) {
         return this.description = description;
     }
 
-    private String setMachineCode(String machineCode) {
+    public String setMachineCode(String machineCode) {
         return this.machineCode = machineCode;
     }
 
-    private Long setReferentialId(Long referentialId) {
+    public Long setReferentialId(Long referentialId) {
         return this.referentialId = referentialId;
     }
 
-    private Long setId(Long id) {
+    public Long setId(Long id) {
         return this.id = id;
     }
 }
