@@ -26,7 +26,7 @@ public class SeedDB {
     @PostConstruct
     public void init(){
 
-/*
+
       BeamlineSchematicMachineEntity machine = new BeamlineSchematicMachineEntity(
                 2036829L,
                 4805738L,
@@ -142,14 +142,14 @@ public class SeedDB {
                 2036829L,
                 4805738L,
                 "test",
-                "test",
-                "test",
+                "F61.XVC01",
+                "VXRT",
                 1,
-                "test",
+                "VACUUM CHAMBERS",
                 Instant.parse("2022-12-31T23:59:59.00Z"),
                 1,
                 Instant.parse("2027-12-31T23:59:59.00Z"),
-                "test",
+                "ENDLESS",
                 1,
                 2036829L,
                 "test",
@@ -176,7 +176,7 @@ public class SeedDB {
                 2036829L,
                 4805738L,
                 "test",
-                "test",
+                "F61.XVA029",
                 "test",
                 2,
                 "test1",
@@ -210,7 +210,7 @@ public class SeedDB {
                 2036829L,
                 4805738L,
                 "test",
-                "test",
+                "F61.XVW012",
                 "test",
                 1,
                 "test",
@@ -244,7 +244,7 @@ public class SeedDB {
                 2036829L,
                 4805738L,
                 "test",
-                "test",
+                "F61.XVB015",
                 "test",
                 3,
                 "test1",
@@ -278,7 +278,7 @@ public class SeedDB {
                 2036829L,
                 4805738L,
                 "test",
-                "test",
+                "F61.TBS018",
                 "test",
                 1,
                 "test",
@@ -312,7 +312,7 @@ public class SeedDB {
                 2036829L,
                 4805738L,
                 "test",
-                "test",
+                "F61.XVB020",
                 "test",
                 3,
                 "test1",
@@ -346,7 +346,7 @@ public class SeedDB {
                 2036829L,
                 4805738L,
                 "test",
-                "test",
+                "F61.BTV012",
                 "test",
                 1,
                 "test1",
@@ -598,7 +598,7 @@ public class SeedDB {
                 "#006400",
                 "test",
                 0.1,
-                0.159,
+                0.0,
                 0.159,
                 29.34021,
                 0.0,
@@ -734,7 +734,7 @@ public class SeedDB {
                 "#FF4500",
                 "test",
                 0.6494,
-                1.5,
+                0.0,
                 0.51,
                 2.92661,
                 0.0,
@@ -748,6 +748,40 @@ public class SeedDB {
                 "F61"
         );
 
-        beamlineSchematicElementEntityRepository.save(element19);*/
+        beamlineSchematicElementEntityRepository.save(element19);
+
+        BeamlineSchematicElementEntity element20 = new BeamlineSchematicElementEntity(
+                2036829L,
+                4805738L,
+                "test",
+                "test",
+                "test",
+                1,
+                "test",
+                Instant.parse("2022-12-31T23:59:59.00Z"),
+                1,
+                Instant.parse("2027-12-31T23:59:59.00Z"),
+                "test",
+                1,
+                2036829L,
+                "test",
+                "#006400",
+                "test",
+                4.0,
+                0.159,
+                0.508,
+                8.62721,
+                0.0,
+                0.0,
+                6.62721,
+                0.0,
+                0.0,
+                4.62721,
+                0.0,
+                0.0,
+                "F61"
+        );
+
+        beamlineSchematicElementEntityRepository.save(element20);
     }
 }
